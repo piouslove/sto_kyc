@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://www.idhub.network/favicon.png">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>IDHub STO KYC DEMO</title>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">IDHub KYC</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/front/index.html">首页</a>
+            <a class="nav-link" href="/front/apply.html">申请认证</a>
+            <a class="nav-link active" href="/front/query.html">查询结果</a>
+            <a class="nav-link" href="/front/check.html">审批认证</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover" id="mainBody">
+        <div class="inner" id="mainTitle">
+        <br>
+        <h1 class="cover-heading">Know Your Customer From IDHub.</h1>
+        <h3 class="cover-heading">Query Audit Result</h3>
+        <br>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">以太坊地址</label>
+            <input type="text" class="form-control" id="formAddress" placeholder="Ethereum Address with 0x">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">KYC项目选择</label>
+            <select class="form-control" id="formSelect">
+              
+            </select>
+          </div>
+
+          <button type="button" class="btn btn-primary mb-2" onclick="query()">查询审核结果</button>
+
+        </form>
+        <br>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>KYC for <a href="#">STO</a>, by <a href="http://idhub.network">@idhub</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/js/ethers.js"></script>
+    <script src="/js/contract.js"></script>
+    <script src="/js/kyc.js"></script>
+  </body>
+</html>
